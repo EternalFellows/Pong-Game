@@ -55,8 +55,13 @@
           <attributes>
             <text id="name">Change Attribute</text>
             <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute" />
-            <text id="RHS" />
+            <text id="targetAttribute">game.attributes.id856892</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id856892" />
+                <string xml:space="preserve">+100</string>
+              </expression>
+            </text>
           </attributes>
         </behavior>
       </behaviors>
