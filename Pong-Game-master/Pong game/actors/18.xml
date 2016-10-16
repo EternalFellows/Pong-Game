@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id490098" PGFVersion="0.25" GSCVersion="1.25.5977">
+<actor id="id944946" PGFVersion="0.25" GSCVersion="1.25.5977">
   <attributes>
-    <text id="name">Player1</text>
+    <text id="name">Demolition Player</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -23,22 +23,22 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id459647" class="CompoundBehavior" enabled="true">
+    <behavior id="id735116" class="CompoundBehavior" enabled="true">
       <attributes>
-        <text id="name">Movement</text>
+        <text id="name">movement</text>
         <text id="bundleName">Group.behavior</text>
         <boolean id="runOnce">false</boolean>
         <boolean id="runSequentially">false</boolean>
       </attributes>
       <behaviors>
-        <behavior id="id623955" class="RuleBehavior" enabled="true">
+        <behavior id="id717198" class="RuleBehavior" enabled="true">
           <attributes>
-            <text id="name">up</text>
+            <text id="name">Move up</text>
             <text id="bundleName">Rule.behavior</text>
             <real id="compoundConditionKind">0</real>
           </attributes>
           <conditions>
-            <condition id="id314845" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+            <condition id="id215052" eventType="key" pluginPredicateTypeIndex="0" class="Key">
               <attributes>
                 <text id="name">default name</text>
                 <index id="conditionType">0</index>
@@ -52,26 +52,26 @@
             </condition>
           </conditions>
           <behaviors>
-            <behavior id="id382958" class="MoveBehavior" enabled="true">
+            <behavior id="id242171" class="MoveBehavior" enabled="true">
               <attributes>
                 <text id="name">Move</text>
                 <text id="bundleName">Move.behavior</text>
                 <angle id="direction">90</angle>
                 <index id="space">0</index>
                 <index id="moveType">0</index>
-                <real id="speed">200</real>
+                <real id="speed">150</real>
               </attributes>
             </behavior>
           </behaviors>
         </behavior>
-        <behavior id="id764641" class="RuleBehavior" enabled="true">
+        <behavior id="id901326" class="RuleBehavior" enabled="true">
           <attributes>
-            <text id="name">down</text>
+            <text id="name">Move Down</text>
             <text id="bundleName">Rule.behavior</text>
             <real id="compoundConditionKind">0</real>
           </attributes>
           <conditions>
-            <condition id="id291703" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+            <condition id="id119222" eventType="key" pluginPredicateTypeIndex="0" class="Key">
               <attributes>
                 <text id="name">default name</text>
                 <index id="conditionType">0</index>
@@ -85,29 +85,29 @@
             </condition>
           </conditions>
           <behaviors>
-            <behavior id="id156935" class="MoveBehavior" enabled="true">
+            <behavior id="id357949" class="MoveBehavior" enabled="true">
               <attributes>
                 <text id="name">Move</text>
                 <text id="bundleName">Move.behavior</text>
                 <angle id="direction">270</angle>
                 <index id="space">0</index>
                 <index id="moveType">0</index>
-                <real id="speed">200</real>
+                <real id="speed">150</real>
               </attributes>
             </behavior>
           </behaviors>
         </behavior>
-        <behavior id="id673145" class="ConstrainAttributeBehavior" enabled="true">
+        <behavior id="id471283" class="ConstrainAttributeBehavior" enabled="true">
           <attributes>
             <text id="name">lock x coordinate</text>
             <text id="bundleName">ConstrainAttribute.behavior</text>
             <text id="targetAttribute">self.attributes.position.x</text>
-            <text id="RHS">55</text>
+            <text id="RHS">68</text>
           </attributes>
         </behavior>
-        <behavior id="id137918" class="CollideBehavior" enabled="true">
+        <behavior id="id131421" class="CollideBehavior" enabled="true">
           <attributes>
-            <text id="name">stop from going through walls</text>
+            <text id="name">Collide</text>
             <text id="bundleName">Collide.behavior</text>
             <text id="prototypeKey">id163981</text>
             <text id="actorTag">Ground</text>
@@ -151,8 +151,8 @@
         <real id="density">500</real>
         <real id="friction">0</real>
         <real id="restitution">1</real>
-        <boolean id="fixedRotation">false</boolean>
-        <boolean id="movable">false</boolean>
+        <boolean id="fixedRotation">true</boolean>
+        <boolean id="movable">true</boolean>
         <enumeration id="collisionShape">0</enumeration>
         <real id="drag">0</real>
         <real id="angularDrag">0</real>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id163981" PGFVersion="0.25" GSCVersion="1.25.5977">
+<actor id="id254039" PGFVersion="0.25" GSCVersion="1.25.5977">
   <attributes>
-    <text id="name">walls</text>
+    <text id="name">Demo Spawner</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -22,11 +22,48 @@
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
-  <behaviors />
+  <behaviors>
+    <behavior id="id396818" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id359879" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id389698</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">0</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id484021" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id775409</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
   <aspects>
     <graphics>
       <attributes>
-        <boolean id="visible">true</boolean>
+        <boolean id="visible">false</boolean>
         <enumeration id="blendingMode">0</enumeration>
         <enumeration id="horizontalWrap">0</enumeration>
         <enumeration id="verticalWrap">0</enumeration>
@@ -55,10 +92,10 @@
     <physics>
       <attributes>
         <real id="density">1</real>
-        <real id="friction">0</real>
-        <real id="restitution">0</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
         <boolean id="fixedRotation">false</boolean>
-        <boolean id="movable">false</boolean>
+        <boolean id="movable">true</boolean>
         <enumeration id="collisionShape">0</enumeration>
         <real id="drag">0</real>
         <real id="angularDrag">0</real>

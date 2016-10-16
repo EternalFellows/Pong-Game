@@ -21,13 +21,21 @@
     <actor id="id249883" />
     <actor id="id899064" />
     <actor id="id186684" />
+    <actor id="id875174" />
+    <actor id="id494093" />
+    <actor id="id944946" />
+    <actor id="id462075" />
+    <actor id="id441358" />
+    <actor id="id775409" />
+    <actor id="id254039" />
   </prototypes>
   <plugins />
   <scenes>
     <scene id="id899217" />
     <scene id="id889003" />
-    <scene id="id485900" />
     <scene id="id207235" />
+    <scene id="id485900" />
+    <scene id="id568603" />
   </scenes>
   <attributes>
     <text id="name">default name</text>
@@ -192,5 +200,6 @@
     <boolean id="id389698" name="Ball">false</boolean>
     <integer id="id444642" name="Score">0</integer>
     <integer id="id678518" name="Score2">0</integer>
+    <integer id="id182547" name="Lives">3</integer>
   </attributes>
 </game>

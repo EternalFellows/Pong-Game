@@ -35,8 +35,8 @@
         <actor id="id448010" prototype="id163981">
           <attributes>
             <point id="position">
-              <real id="x">283</real>
-              <real id="y">316</real>
+              <real id="x">284</real>
+              <real id="y">320</real>
             </point>
             <size id="size">
               <real id="width">575</real>
@@ -50,7 +50,7 @@
           <attributes>
             <point id="position">
               <real id="x">284</real>
-              <real id="y">7</real>
+              <real id="y">5</real>
             </point>
             <size id="size">
               <real id="width">575</real>

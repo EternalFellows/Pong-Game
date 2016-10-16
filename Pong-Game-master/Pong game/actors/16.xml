@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id163981" PGFVersion="0.25" GSCVersion="1.25.5977">
+<actor id="id875174" PGFVersion="0.25" GSCVersion="1.25.5977">
   <attributes>
-    <text id="name">walls</text>
+    <text id="name">Destroyer</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -22,7 +22,15 @@
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
-  <behaviors />
+  <behaviors>
+    <behavior id="id274820" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+    </behavior>
+  </behaviors>
   <aspects>
     <graphics>
       <attributes>
@@ -55,10 +63,10 @@
     <physics>
       <attributes>
         <real id="density">1</real>
-        <real id="friction">0</real>
-        <real id="restitution">0</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
         <boolean id="fixedRotation">false</boolean>
-        <boolean id="movable">false</boolean>
+        <boolean id="movable">true</boolean>
         <enumeration id="collisionShape">0</enumeration>
         <real id="drag">0</real>
         <real id="angularDrag">0</real>
