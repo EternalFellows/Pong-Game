@@ -25,9 +25,9 @@
   <behaviors>
     <behavior id="id752601" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Destroy</text>
         <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
+        <real id="compoundConditionKind">1</real>
       </attributes>
       <conditions>
         <condition id="id103434" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
@@ -38,6 +38,19 @@
           <predicate type="collision">
             <attributes>
               <text id="prototypeKey">id775409</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id230570" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id850504</text>
               <text id="actorTag" />
               <real id="mode">0</real>
             </attributes>
@@ -55,8 +68,13 @@
           <attributes>
             <text id="name">Change Attribute</text>
             <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute" />
-            <text id="RHS" />
+            <text id="targetAttribute">game.attributes.id856892</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id856892" />
+                <string xml:space="preserve">+100</string>
+              </expression>
+            </text>
           </attributes>
         </behavior>
       </behaviors>

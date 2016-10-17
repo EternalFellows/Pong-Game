@@ -51,9 +51,9 @@
             <text id="prototypeKey">id775409</text>
             <angle id="direction">0</angle>
             <index id="directionSpace">0</index>
-            <real id="x">0</real>
-            <real id="y">0</real>
-            <index id="positionSpace">0</index>
+            <real id="x">270</real>
+            <real id="y">160</real>
+            <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>
           </attributes>
         </behavior>

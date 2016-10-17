@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id494093" PGFVersion="0.25" GSCVersion="1.25.5977">
+<actor id="id808154" PGFVersion="0.25" GSCVersion="1.25.5977">
   <attributes>
-    <text id="name">TextLoader2</text>
+    <text id="name">LivesCounter</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -23,11 +23,15 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id303864" class="DisplayTextBehavior" enabled="true">
+    <behavior id="id765673" class="DisplayTextBehavior" enabled="true">
       <attributes>
-        <text id="name">Title</text>
+        <text id="name">Display Text</text>
         <text id="bundleName">DisplayText.behavior</text>
-        <text id="text">BlastBox</text>
+        <text id="text">
+          <expression>
+            <reference keypath="game.attributes.id182547" />
+          </expression>
+        </text>
         <text id="font">Cambay</text>
         <real id="size">30</real>
         <index id="alignment">1</index>
@@ -45,30 +49,34 @@
         <angle id="direction">0</angle>
       </attributes>
     </behavior>
-    <behavior id="id706361" class="RuleBehavior" enabled="true">
+    <behavior id="id373830" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Load game</text>
+        <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id432655" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+        <condition id="id802508" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
           <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id182547</text>
             <text id="name">default name</text>
-            <index id="conditionType">0</index>
           </attributes>
-          <predicate type="touch" conditionType="pressed">
-            <attributes />
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;</text>
+              <real id="RHS">0</real>
+            </attributes>
           </predicate>
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id600366" class="ChangeSceneAction" enabled="true">
+        <behavior id="id615466" class="ChangeSceneAction" enabled="true">
           <attributes>
             <text id="name">Change Scene</text>
             <text id="bundleName">ChangeScene.behavior</text>
-            <text id="sceneKey">id568603</text>
-            <index id="enableAdvertisement">1</index>
+            <text id="sceneKey">id749946</text>
+            <index id="enableAdvertisement">0</index>
             <index id="index">1</index>
           </attributes>
         </behavior>
