@@ -14,6 +14,7 @@
               <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects>
             <graphics>
@@ -36,13 +37,14 @@
           <attributes>
             <point id="position">
               <real id="x">284</real>
-              <real id="y">320</real>
+              <real id="y">317</real>
             </point>
             <size id="size">
               <real id="width">575</real>
               <real id="height">10</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -57,6 +59,7 @@
               <real id="height">10</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -77,6 +80,7 @@
               <real id="blue">0</real>
               <real id="alpha">1</real>
             </color>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -91,6 +95,7 @@
               <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects>
             <graphics>
@@ -118,6 +123,7 @@
               <real id="height">320</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects>
             <graphics>
@@ -144,6 +150,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -158,6 +165,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -172,6 +180,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -186,6 +195,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -200,6 +210,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -214,6 +225,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -228,6 +240,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -242,6 +255,7 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -256,20 +270,22 @@
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
         <actor id="id598584" prototype="id378241">
           <attributes>
             <point id="position">
-              <real id="x">23</real>
-              <real id="y">297</real>
+              <real id="x">22</real>
+              <real id="y">291</real>
             </point>
             <size id="size">
               <real id="width">42</real>
               <real id="height">42</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -277,13 +293,14 @@
           <attributes>
             <point id="position">
               <real id="x">547</real>
-              <real id="y">299</real>
+              <real id="y">291</real>
             </point>
             <size id="size">
               <real id="width">42</real>
               <real id="height">42</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects />
         </actor>
@@ -298,6 +315,7 @@
               <real id="height">320</real>
             </size>
             <angle id="rotation">0</angle>
+            <text id="tags" />
           </attributes>
           <aspects>
             <graphics>
