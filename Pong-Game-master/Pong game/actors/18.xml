@@ -8,14 +8,14 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">120</real>
-      <real id="height">120</real>
+      <real id="width">30</real>
+      <real id="height">58</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
-      <real id="red">1</real>
-      <real id="green">1</real>
-      <real id="blue">1</real>
+      <real id="red">0.250980392156863</real>
+      <real id="green">0</real>
+      <real id="blue">0.501960784313725</real>
       <real id="alpha">1</real>
     </color>
     <image id="image" />
@@ -59,7 +59,7 @@
                 <angle id="direction">90</angle>
                 <index id="space">0</index>
                 <index id="moveType">0</index>
-                <real id="speed">150</real>
+                <real id="speed">225</real>
               </attributes>
             </behavior>
           </behaviors>
@@ -92,7 +92,7 @@
                 <angle id="direction">270</angle>
                 <index id="space">0</index>
                 <index id="moveType">0</index>
-                <real id="speed">150</real>
+                <real id="speed">225</real>
               </attributes>
             </behavior>
           </behaviors>

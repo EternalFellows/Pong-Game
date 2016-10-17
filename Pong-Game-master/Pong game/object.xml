@@ -28,14 +28,29 @@
     <actor id="id441358" />
     <actor id="id775409" />
     <actor id="id254039" />
+    <actor id="id665947" />
+    <actor id="id808154" />
+    <actor id="id561736" />
+    <actor id="id201351" />
+    <actor id="id172875" />
+    <actor id="id601056" />
+    <actor id="id982544" />
+    <actor id="id359379" />
+    <actor id="id850504" />
+    <actor id="id229241" />
+    <actor id="id428780" />
+    <actor id="id158180" />
   </prototypes>
   <plugins />
   <scenes>
     <scene id="id899217" />
     <scene id="id889003" />
     <scene id="id207235" />
-    <scene id="id485900" />
     <scene id="id568603" />
+    <scene id="id749946" />
+    <scene id="id485900" />
+    <scene id="id487431" />
+    <scene id="id409291" />
   </scenes>
   <attributes>
     <text id="name">default name</text>
@@ -45,7 +60,7 @@
       <real id="width">568</real>
       <real id="height">320</real>
     </size>
-    <text id="actorTags" />
+    <text id="actorTags">All</text>
     <boolean id="platformConnected">false</boolean>
     <enumeration id="playerType">1</enumeration>
     <playermap id="player1 Keymap">
@@ -199,7 +214,8 @@
     <table id="id791182" name="PurchaseTable">PurchaseTable</table>
     <boolean id="id389698" name="Ball">false</boolean>
     <integer id="id444642" name="Score">0</integer>
-    <integer id="id678518" name="Score2">0</integer>
+    <integer id="id678518" name="Score2">-1</integer>
     <integer id="id182547" name="Lives">3</integer>
+    <integer id="id856892" name="DemoScore">0</integer>
   </attributes>
 </game>

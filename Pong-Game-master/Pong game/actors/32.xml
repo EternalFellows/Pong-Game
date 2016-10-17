@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id494093" PGFVersion="0.25" GSCVersion="1.25.5977">
+<actor id="id229241" PGFVersion="0.25" GSCVersion="1.25.5977">
   <attributes>
-    <text id="name">TextLoader2</text>
+    <text id="name">InstaBall Spawner</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">120</real>
-      <real id="height">120</real>
+      <real id="width">20</real>
+      <real id="height">25</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
-      <real id="red">1</real>
-      <real id="green">1</real>
-      <real id="blue">1</real>
-      <real id="alpha">0</real>
+      <real id="red">0.501960784313725</real>
+      <real id="green">0</real>
+      <real id="blue">0.250980392156863</real>
+      <real id="alpha">1</real>
     </color>
     <image id="image" />
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id303864" class="DisplayTextBehavior" enabled="true">
+    <behavior id="id459146" class="DisplayTextBehavior" enabled="true">
       <attributes>
-        <text id="name">Title</text>
+        <text id="name">+1</text>
         <text id="bundleName">DisplayText.behavior</text>
-        <text id="text">BlastBox</text>
+        <text id="text">+1</text>
         <text id="font">Cambay</text>
-        <real id="size">30</real>
+        <real id="size">25</real>
         <index id="alignment">1</index>
         <boolean id="wrap">false</boolean>
         <color id="color">
@@ -45,31 +45,53 @@
         <angle id="direction">0</angle>
       </attributes>
     </behavior>
-    <behavior id="id706361" class="RuleBehavior" enabled="true">
+    <behavior id="id103805" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Load game</text>
+        <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id432655" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+        <condition id="id443136" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
-          <predicate type="touch" conditionType="pressed">
-            <attributes />
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id775409</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
           </predicate>
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id600366" class="ChangeSceneAction" enabled="true">
+        <behavior id="id648146" class="DestroyAction" enabled="true">
           <attributes>
-            <text id="name">Change Scene</text>
-            <text id="bundleName">ChangeScene.behavior</text>
-            <text id="sceneKey">id568603</text>
-            <index id="enableAdvertisement">1</index>
-            <index id="index">1</index>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id273906" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id850504</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">284</real>
+            <real id="y">
+              <expression>
+                <string xml:space="preserve">random(</string>
+                <string xml:space="preserve">80</string>
+                <string xml:space="preserve">, </string>
+                <string xml:space="preserve">300</string>
+                <string xml:space="preserve">)</string>
+              </expression>
+            </real>
+            <index id="positionSpace">1</index>
+            <index id="layerOrder">0</index>
           </attributes>
         </behavior>
       </behaviors>
