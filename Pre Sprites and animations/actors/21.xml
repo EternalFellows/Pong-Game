@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id775409" PGFVersion="0.25" GSCVersion="1.25.5977">
+  <attributes>
+    <text id="name">Demolition Ball</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">25</real>
+      <real id="height">25</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">ball-149289_960_720</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id932895" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Bounce</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id886483" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id163981</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id523944" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id944946</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id113138" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id462075</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id703337" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id172875</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id909134" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id441358</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id477275" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">210</angle>
+            <index id="space">0</index>
+            <real id="speed">300</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id969586" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Ball behaviour</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id930821" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id875174</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id389056" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id955483" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id182547</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id182547" />
+                <string xml:space="preserve">-1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id540372" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id775409</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">1</index>
+            <real id="x">
+              <expression>
+                <string xml:space="preserve">2</string>
+                <string xml:space="preserve">70</string>
+              </expression>
+            </real>
+            <real id="y">
+              <expression>
+                <string xml:space="preserve">random(80, 300)</string>
+              </expression>
+            </real>
+            <index id="positionSpace">1</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">720</integer>
+        <integer id="tileHeight">720</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <point id="centerOfMass">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+        <boolean id="pin">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">true</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+        <boolean id="canSleep">true</boolean>
+        <boolean id="betterColisions">false</boolean>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

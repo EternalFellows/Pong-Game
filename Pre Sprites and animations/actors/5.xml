@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id148275" PGFVersion="0.25" GSCVersion="1.25.5977">
+  <attributes>
+    <text id="name">Ball</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">10</real>
+      <real id="height">10</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">ball-149289_960_720</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id796553" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">collision + movement</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id686519" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id490098</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id709316" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id163981</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id574402" class="CollideBehavior" enabled="true">
+          <attributes>
+            <text id="name">Collide</text>
+            <text id="bundleName">Collide.behavior</text>
+            <text id="prototypeKey">id213608</text>
+            <text id="actorTag">Ground</text>
+            <index id="mode">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id106143" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">0</index>
+            <real id="speed">300</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id299536" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Respawn on contact with goal1 + score</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id405633" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id525384</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id147262" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id277099" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Respawn Ball</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id148275</text>
+            <angle id="direction">220</angle>
+            <index id="directionSpace">1</index>
+            <real id="x">284</real>
+            <real id="y">
+              <expression>
+                <string xml:space="preserve">random(</string>
+                <string xml:space="preserve">0</string>
+                <string xml:space="preserve">, </string>
+                <string xml:space="preserve">300</string>
+                <string xml:space="preserve">)</string>
+              </expression>
+            </real>
+            <index id="positionSpace">1</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id360439" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Score+1</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id678518</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id678518" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id747599" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Respawn on contact with goal2 + score</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id292121" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id961661</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id441856" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id148275</text>
+            <angle id="direction">25</angle>
+            <index id="directionSpace">1</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">1</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id889773" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id743648" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id444642</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id444642" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id624301" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id678518</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id678518" />
+                <string xml:space="preserve">-1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth" name="tileWidth">720</integer>
+        <integer id="tileHeight" name="tileHeight">720</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <point id="centerOfMass">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+        <boolean id="pin">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">true</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+        <boolean id="canSleep">true</boolean>
+        <boolean id="betterColisions">false</boolean>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

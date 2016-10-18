@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.5977">
+  <sounds />
+  <images>
+    <image name="ball-149289_960_720">
+      <file name="ball-149289_960_720.png" size="81401" />
+    </image>
+    <image name="Tuna1">
+      <file name="Tuna1.png" size="95155" />
+    </image>
+    <image name="Tuna2">
+      <file name="Tuna2.png" size="93153" />
+    </image>
+    <image name="tuna3">
+      <file name="tuna3.png" size="92761" />
+    </image>
+    <image name="Gentleman Whale bigger">
+      <file name="Gentleman Whale bigger.png" size="7872" />
+    </image>
+    <image name="beach_background_by_deitz94-d5hpts8">
+      <file name="beach_background_by_deitz94-d5hpts8.png" size="93972" />
+    </image>
+    <image name="chair">
+      <file name="chair.png" size="76241" />
+    </image>
+    <image name="Beach-Ball-PNG-Image">
+      <file name="Beach-Ball-PNG-Image.png" size="61896" />
+    </image>
+    <image name="instaball">
+      <file name="instaball.png" size="83902" />
+    </image>
+    <image name="p2 whale">
+      <file name="p2 whale.png" size="2533" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>
