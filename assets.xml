@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.5977">
+  <sounds>
+    <music name="414RidetheFire!(Karaoke)">
+      <file name="414 Ride the Fire! (Karaoke).mp3" size="7022717" />
+    </music>
+    <music name="415BirthdayTrain(Karaoke)">
+      <file name="415 Birthday Train (Karaoke).mp3" size="6581725" />
+    </music>
+    <music name="416BigBlastSonic(Karaoke)">
+      <file name="416 Big Blast Sonic (Karaoke).mp3" size="7808366" />
+    </music>
+    <music name="409Storyteller">
+      <file name="409 Storyteller.mp3" size="7512367" />
+    </music>
+    <music name="412HEAVYDAY(Karaoke)">
+      <file name="412 HEAVY DAY (Karaoke).mp3" size="8875411" />
+    </music>
+  </sounds>
+  <images>
+    <image name="ball-149289_960_720">
+      <file name="ball-149289_960_720.png" size="81401" />
+    </image>
+    <image name="beach_background_by_deitz94-d5hpts8">
+      <file name="beach_background_by_deitz94-d5hpts8.png" size="93972" />
+    </image>
+    <image name="Beach-Ball-PNG-Image">
+      <file name="Beach-Ball-PNG-Image.png" size="61896" />
+    </image>
+    <image name="instaball">
+      <file name="instaball.png" size="83902" />
+    </image>
+    <image name="Tuna1">
+      <file name="Tuna1.png" size="127601" />
+    </image>
+    <image name="Tuna2">
+      <file name="Tuna2.png" size="127624" />
+    </image>
+    <image name="tuna3">
+      <file name="tuna3.png" size="127019" />
+    </image>
+    <image name="imageProxy">
+      <file name="imageProxy.png" size="15359" />
+    </image>
+    <image name="Black Hole">
+      <file name="Black Hole.png" size="7064" />
+    </image>
+    <image name="p2 whale">
+      <file name="p2 whale.png" size="3977" />
+    </image>
+    <image name="Gentleman Whale bigger">
+      <file name="Gentleman Whale bigger.png" size="4066" />
+    </image>
+    <image name="chair">
+      <file name="chair.png" size="78786" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>
